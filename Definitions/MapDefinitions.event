@@ -1,0 +1,7 @@
+#define ProMap 0x4
+#define ProTileChange 0x6
+#define ProEvent 0x7
+
+#define Ch1Map 0x8
+#define Ch1TileChange 0x9
+#define Ch1Event 0xA

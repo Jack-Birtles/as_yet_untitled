@@ -1,0 +1,106 @@
+EventPointerTable(Ch2Event, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno Tutorial
+POIN Traps Traps
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+Survive(EndingScene,8)
+TURN 0x0 BossArrives[3,0] 0x0
+END_MAIN
+
+BossArrives:
+ReinforcementEvent(Boss)
+NoFade
+ENDA
+
+Boss:
+UNIT Breguet Shaman 0x00 Level(4, Enemy, 0) [2,18] DropItem 0x00 0x0 0x00 [Flux,AngelicRobe] NeverMoveAI
+UNIT 0x80 Shaman Breguet Level(2, Enemy, 1) [2,16] 0x00 0x00 0x0 0x00 [Flux] NeverMoveAI
+UNIT 0x80 Knight Breguet Level(2, Enemy, 1) [3,17] 0x00 0x00 0x0 0x00 [IronLance] NeverMoveAI
+UNIT 0x80 Shaman Breguet Level(2, Enemy, 1) [4,18] 0x00 0x00 0x0 0x00 [Flux] NeverMoveAI
+UNIT
+
+Wave1Text:
+Text(PrologueReinforcementText)
+TEXTEND
+ENDA
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Village(0x07,LeftHouseEvent,18,5)
+END_MAIN
+
+LeftHouseEvent:
+	HouseEvent(PrologueReinforcementText,HouseBG)
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+DefeatBoss(EndingScene)
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Units1:
+UNIT Eirika EirikaLord Eirika Level(5, Ally, 0) [12,3] 0x00 0x00 0x0 0x00 [Rapier, Fire, Vulnerary] NoAI 
+UNIT Seth GreatKnight Eirika Level(1, Ally, 0) [10,2] 0x00 0x00 0x0 0x00 [IronSword, SilverAxe, Vulnerary] NoAI 
+UNIT Franz Cavalier Eirika Level(1, Ally, 0) [10,4] 0x00 0x00 0x0 0x00 [IronSword, Vulnerary] NoAI 
+UNIT Gilliam Cavalier Eirika Level(1, Ally, 0) [14,2] 0x00 0x00 0x0 0x00 [IronSword, Vulnerary] NoAI 
+UNIT Moulder Cavalier Eirika Level(1, Ally, 0) [14,4] 0x00 0x00 0x0 0x00 [IronSword, Vulnerary] NoAI 
+UNIT
+
+Bad: 
+UNIT 0x80 Soldier Breguet Level(2, Enemy, 1) [3,1] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
+UNIT 0x80 Soldier Breguet Level(4, Enemy, 1) [1,5] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
+UNIT 0x80 Soldier Breguet Level(2, Enemy, 1) [5,6] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT 0x80 Soldier Breguet Level(2, Enemy, 1) [3,8] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT 0x80 Soldier Breguet Level(2, Enemy, 1) [2,10] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT 0x80 Soldier Breguet Level(2, Enemy, 1) [10,7] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT 0x80 Soldier Breguet Level(2, Enemy, 1) [15,8] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT 0x80 Soldier Breguet Level(2, Enemy, 1) [5,12] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT 0x80 Soldier Breguet Level(2, Enemy, 1) [10,11] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT 0x80 Soldier Breguet Level(2, Enemy, 1) [11,11] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT 0x80 Soldier Breguet Level(2, Enemy, 1) [14,13] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT 0x80 Soldier Breguet Level(2, Enemy, 1) [6,15] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT 0x80 Soldier Breguet Level(2, Enemy, 1) [8,16] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT 0x80 Soldier Breguet Level(2, Enemy, 1) [7,17] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT 0x80 Soldier Breguet Level(2, Enemy, 1) [12,16] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT 0x80 Soldier Breguet Level(2, Enemy, 1) [16,18] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT 0x80 Soldier Breguet Level(2, Enemy, 1) [17,19] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT
+
+Traps:
+ENDTRAP
+ALIGN 4
+
+BeginningScene:
+LOAD1 0x1 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
+ENUN
+LOAD1 0x1 Bad
+ENUN
+// GotoPrepScreen
+ENDA
+
+EndingScene:
+MUSC 0x31
+SetBackground(0x21)
+Text(PrologueClosingText)
+TEXTEND
+CALL $9EE2C4 //BGEnd
+MNC2 0x2 //go to ch1
+NoFade
+ENDA

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="1">
+ <tileset firstgid="1" name="villagev2" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="villagev2.png" width="512" height="512"/>
+ </tileset>
+ <layer id="1" name="Main" width="16" height="12">
+  <properties>
+   <property name="Anims1" value="0"/>
+   <property name="Anims2" value="0"/>
+   <property name="ChapterID" value="1"/>
+   <property name="Main" value=""/>
+   <property name="MapChangesID" value="Ch1TileChange"/>
+   <property name="MapID" value=" Ch1Map"/>
+   <property name="ObjectType" value="newVillageObjectSet"/>
+   <property name="PaletteID" value="newVillagePalette"/>
+   <property name="TileConfig" value="newVillageTileConfig"/>
+  </properties>
+  <data encoding="csv">
+684,675,644,644,644,740,421,458,112,113,114,363,226,420,257,258,
+780,770,149,95,96,679,453,458,458,362,458,458,333,289,258,258,
+238,420,121,127,128,709,453,455,455,455,458,458,458,461,91,92,
+136,207,142,392,420,675,592,560,560,560,560,497,455,455,123,64,
+272,272,230,521,522,711,331,329,426,423,423,426,455,455,458,458,
+272,230,225,7,8,709,453,458,362,362,455,458,458,362,455,458,
+298,420,43,9,40,771,684,362,458,776,776,421,455,684,421,362,
+298,193,161,290,193,779,780,371,371,780,780,371,371,709,453,458,
+272,210,138,141,133,272,272,272,272,198,199,272,272,711,453,458,
+272,272,272,272,272,303,272,272,272,272,272,272,272,709,91,92,
+303,272,272,272,230,289,165,303,272,272,272,272,232,711,123,124,
+161,297,303,166,289,149,95,28,93,94,229,272,238,679,362,458
+</data>
+ </layer>
+ <layer id="3" name="village" width="16" height="12" locked="1">
+  <properties>
+   <property name="Height" value="1"/>
+   <property name="ID" value="0"/>
+   <property name="Width" value="1"/>
+   <property name="X" value="3"/>
+   <property name="Y" value="2"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,32,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+</map>

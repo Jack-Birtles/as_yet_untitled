@@ -1,0 +1,2 @@
+#include "Commander/SwordInstaller.event"
+#include "Commander/MagicInstaller.event"

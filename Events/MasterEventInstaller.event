@@ -1,0 +1,10 @@
+//#include "Global/_Global Event Installer.event"
+
+#include "WorldMapEvents/WorldMapEventInstaller.event"
+
+{
+#include "Prologue.event"
+}
+{
+#include "Chapter1.event"
+}

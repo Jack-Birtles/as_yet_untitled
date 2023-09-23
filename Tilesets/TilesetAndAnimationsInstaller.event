@@ -1,0 +1,21 @@
+ALIGN 4
+villageObjects:
+#incext Png2Dmp "villagev2/Villagev2-StandardTiles.png" --lz77
+
+ALIGN 4
+villageTiles:
+#incext compress "villagev2/Villagev2-Config.mapchip_config"
+
+ALIGN 4
+StandardPalette:
+//#incbin "villagev2/pal_standard.dmp"
+#incext Png2Dmp "villagev2/Villagev2-StandardTiles.png" --palette-only
+
+//1AEBF0 - normal
+//1AE5B0 - sunset
+//1AE0B0 - night
+//1ADCF0 - snow
+
+EventPointerTable(0x8b, villageObjects)
+EventPointerTable(0x8c, villageTiles)
+EventPointerTable(0x8d, StandardPalette)

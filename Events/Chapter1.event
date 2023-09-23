@@ -1,0 +1,150 @@
+EventPointerTable(Ch1Event, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno Tutorial
+POIN Traps Traps
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+//TURN 0x0 Wave1Text[3,0] 0x0
+TURN 0x0 WaveFirst[4,0] 0x0
+END_MAIN
+
+WaveFirst:
+ReinforcementEvent(Wave1)
+ENDA
+
+Wave1:
+UNIT 0x80 Soldier ONeill Level(4, Enemy, 1) [12,11] 0x00 0x00 0x0 0x00 [Javelin] PursueWithoutHeedAI
+UNIT 0x80 Myrmidon ONeill Level(4, Enemy, 1) [11,11] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI 
+UNIT
+
+Wave1Text:
+Text(PrologueReinforcementText)
+TEXTEND
+ENDA
+
+CharacterBasedEvents:
+CharacterEventBothWays(0x8, EirikaSethTalk, Eirika, Seth)
+END_MAIN
+
+EirikaSethTalk:
+Text(PrologueEirikaSethTalk)
+REMA
+NoFade
+ENDA
+
+LocationBasedEvents:
+Village(0x07,House,3,2)
+END_MAIN
+
+House:
+    VillageEventItem(PrologueReinforcementText, HouseBG, SlimSword)
+    ENDA
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+DefeatBoss(EndingScene)
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Units1:
+UNIT Eirika EirikaLord Eirika Level(4, Ally, 0) [3,2] 0x00 0x00 0x0 0x00 [Rapier, Vulnerary] NoAI 
+UNIT Seth GreatKnight Eirika Level(1, Ally, 0) [2,3] 0x00 0x00 0x0 0x00 [SteelSword, SilverAxe, Vulnerary] NoAI 
+UNIT
+
+Bad: 
+UNIT ONeill Knight 0x00 Level(4, Enemy, 0) [9,0] 0x00 0x00 0x0 0x00 [IronLance] NeverMoveAI 
+//UNIT ONeill Knight 0x00 Level(4, Enemy, 1) [3,3] 0x00 0x00 0x0 0x00 [Javelin] NeverMoveAI 
+UNIT 0x80 Fighter ONeill Level(3, Enemy, 1) [3,5] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI  
+UNIT 0x80 Soldier ONeill Level(4, Enemy, 1) [1,6] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI  
+UNIT 0x80 Fighter ONeill Level(2, Enemy, 1) [3,10] 0x00 0x00 0x0 0x00 [Halberd] AttackInRangeAI 
+UNIT 0x80 Mercenary ONeill Level(3, Enemy, 1) [6,9] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI 
+UNIT 0x80 Archer ONeill Level(3, Enemy, 1) [9,9] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI 
+UNIT 0x80 Soldier ONeill Level(2, Enemy, 1) [7,7] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT 0x80 Mage ONeill Level(2, Enemy, 1) [7,4] 0x00 0x00 0x0 0x00 [Fire] AttackInRangeAI  
+UNIT 0x80 Fighter ONeill Level(2, Enemy, 1) [12,6] 0x00 0x00 0x0 0x00 [HandAxe] AttackInRangeAI 
+UNIT 0x80 Soldier ONeill Level(4, Enemy, 1) [11,5] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
+UNIT 0x80 Archer ONeill Level(2, Enemy, 1) [14,7] 0x00 0x00 0x0 0x00 [SteelBow] AttackInRangeAI
+UNIT 0x80 Fighter ONeill Level(2, Enemy, 1) [6,9] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
+UNIT 0x80 Mercenary ONeill Level(2, Enemy, 1) [0,9] 0x00 0x00 0x0 0x00 [IronBlade] AttackInRangeAI
+UNIT 0x80 Archer ONeill Level(2, Enemy, 1) [8,2] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI
+UNIT 0x80 Mercenary ONeill Level(4, Enemy, 1) [13,3] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
+UNIT 0x80 Mercenary ONeill Level(2, Enemy, 1) [12,2] 0x00 0x00 0x0 0x00 [IronBlade] AttackInRangeAI 
+UNIT 0x80 Soldier ONeill Level(2, Enemy, 1) [7,1] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT
+
+Traps:
+ENDTRAP
+ALIGN 4
+
+BeginningScene:
+//Text(Ch0IntroTalk)
+LOAD1 0x1 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
+ENUN
+
+MUSC 0x0B
+SetBackground(0x21)
+Text(PrologueOpeningText1)
+TEXTEND
+CALL $9EE2C4 //BGEnd
+MUSC 0x0
+FADI 16
+SOUN 0xD2
+STAL 24
+SOUN 0xD3
+STAL 24
+SOUN 0xD4
+STAL 24
+SOUN 0xD2
+STAL 24
+FADU 16
+MUSC 0x0B
+SetBackground(0x21)
+Text(PrologueOpeningText2)
+TEXTEND
+CALL $9EE2C4 //BGEnd
+LOAD1 0x1 Bad
+ENUN
+//LOAD1 0x1 Units2
+//ENUN
+MUSC 0x25
+SetBackground(0x21)
+Text(PrologueOpeningText3)
+TEXTEND
+CALL $9EE2C4 //BGEnd
+/*
+This is how a scripted battle is done.
+StartBattle
+NormalDamage(0,8)
+CriticalHit(1,15)
+EndAttack
+FIG1 Wigbrand Wren 0x0
+*/
+// GotoPrepScreen
+ENDA
+
+EndingScene:
+MUSC 0x31
+SetBackground(0x21)
+Text(PrologueClosingText)
+TEXTEND
+CALL $9EE2C4 //BGEnd
+MNC2 0x1 //go to ch1
+NoFade
+ENDA
+
+VillageEvent:
+VillageEventItem(PlaceholderText, HouseBG, RedGem)

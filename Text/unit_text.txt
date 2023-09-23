@@ -1,0 +1,275 @@
+# 0x0212
+Commander[X]
+
+# 0x0213
+NotJagen[X]
+
+# 0x0214
+Gilliam[.][X]
+
+# 0x0215
+Franz[.][X]
+
+# 0x0216
+Moulder[.][X]
+
+# 0x0217
+Vanessa[.][X]
+
+# 0x0218
+Ross[X]
+
+# 0x0219
+Neimi[.][X]
+
+# 0x021A
+Colm[X]
+
+# 0x021B
+Garcia[X]
+
+# 0x021C
+Innes[.][X]
+
+# 0x021D
+Lute[X]
+
+# 0x021E
+Natasha[.][X]
+
+# 0x021F
+Cormag[X]
+
+# 0x0220
+Ephraim[.][X]
+
+# 0x0221
+Forde[.][X]
+
+# 0x0222
+Kyle[X]
+
+# 0x0223
+Amelia[X]
+
+# 0x0224
+Artur[.][X]
+
+# 0x0225
+Gerik[.][X]
+
+# 0x0226
+Tethys[X]
+
+# 0x0227
+Marisa[X]
+
+# 0x0228
+Saleh[.][X]
+
+# 0x0229
+Ewan[X]
+
+# 0x022A
+L'Arachel[.][X]
+
+# 0x022B
+Dozla[.][X]
+
+# 0x022C
+Nate[X]
+
+# 0x022D
+Rennac[X]
+
+# 0x022E
+Duessel[.][X]
+
+# 0x022F
+Myrrh[.][X]
+
+# 0x0230
+Knoll[.][X]
+
+# 0x0231
+Joshua[X]
+
+# 0x0232
+Syrene[X]
+
+# 0x0233
+Tana[X]
+
+# 0x0234
+Lyon[X]
+
+# 0x0235
+Morva[.][X]
+
+# 0x0236
+Orson[.][X]
+
+# 0x0237
+Valter[X]
+
+# 0x0238
+Selena[X]
+
+# 0x0239
+Breguet[.][X]
+
+# 0x023A
+Bone[X]
+
+# 0x023B
+Bazba[.][X]
+
+# 0x023C
+Saar[X]
+
+# 0x023D
+Novala[X]
+
+# 0x023E
+Murray[X]
+
+# 0x023F
+Tirado[X]
+
+# 0x0240
+Binks[.][X]
+
+# 0x0241
+Pablo[.][X]
+
+# 0x0242
+Aias[X]
+
+# 0x0243
+Carlyle[.][X]
+
+# 0x0244
+Caellach[X]
+
+# 0x0245
+Deni[X]
+
+# 0x0246
+Riev[X]
+
+# 0x0247
+Gheb[X]
+
+# 0x0248
+Beran[.][X]
+
+# 0x0249
+O'Neill[.][X]
+
+# 0x024A
+Glen[X]
+
+# 0x024B
+Zonta[.][X]
+
+# 0x024C
+Vigarde[.][X]
+
+# 0x024D
+Soldier[.][X]
+
+# 0x024E
+Remnant[.][X]
+
+# 0x024F
+Bandit[X]
+
+# 0x0250
+Hunter[X]
+
+# 0x0251
+Sellsword[.][X]
+
+# 0x0252
+Remnant[.][X]
+
+# 0x0253
+Mercenary[.][X]
+
+# 0x0254
+Cutthroat[.][X]
+
+# 0x0255
+Monster[.][X]
+
+# 0x0256
+Monster[.][X]
+
+# 0x0257
+Entombed[X]
+
+# 0x0258
+Maelduin[X]
+
+# 0x0259
+Cyclops[.][X]
+
+# 0x025A
+Fomortiis[.][X]
+
+# 0x025B
+Arcturus[X]
+
+# 0x025C
+Enna[X]
+
+# 0x025D
+Batilda[.][X]
+
+# 0x025E
+Faust[X]
+
+# 0x025F
+Asher[X]
+
+# 0x0260
+Elmina[.][X]
+
+# 0x0261
+Messenger[.][X]
+
+# 0x0262
+Frelian[.][X]
+
+# 0x0263
+Rausten[.][X]
+
+# 0x0264
+Citizen[.][X]
+
+# 0x0265
+Renais Cit.[.][X]
+
+# 0x0266
+River Folk[X]
+
+# 0x0267
+Enemy[.][X]
+
+# 0x0268
+Wall[X]
+
+# 0x0269
+Snag[X]
+
+# 0x026A
+Mark[X]
+
+# 0x026B
+Evil[X]
+
+# 0x026C
+Summonern[.][X]
+
+# 0x026D
+Summon[X]

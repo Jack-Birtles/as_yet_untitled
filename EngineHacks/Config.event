@@ -8,7 +8,7 @@
 // =========================
 
 // If commented, the test map will not be installed.
-#define USE_TEST_MAP
+//#define USE_TEST_MAP
 
 // The amount of attack speed needed to double an opponent.
 #define AS_DOUBLING_THRESHOLD 4
@@ -27,7 +27,7 @@
 // If uncommented, a full str/split will be implemented without replacing any stats
 // TODO: Define an item ID for Spirit Dust (Mag statbooster) in "Strmag/Str Mag Split/Installer.event". Energy Ring is used by default!
 // Item icon for Spirit Dust is included! Define your icon ID in "Strmag/_Master Asm Installer.event". Default is Green Note.
-//#define USE_STRMAG_SPLIT
+#define USE_STRMAG_SPLIT
 
 // If uncommented, the statscreen will have a moving background similar to FE6 and FE7.
 // Customization of graphical assets is possible in Necessary/ModularStatScreen/Background/Graphics/Graphics.event.
@@ -37,7 +37,7 @@
 #define BATTLE_STATS
 
 //If uncommented, will enable Casual Mode (set by flag 0xB0).
-#define CASUAL_MODE
+//#define CASUAL_MODE
 
 //If uncommented, will enable Contemporary Talk & Support.
 #define CONTEMPORARY_TALK_SUPPORT
@@ -134,7 +134,7 @@
 
 // If uncommented, Leadership Stars will be implemented.
 // Go to LeadershipStars/LeadershipStars.event to edit settings.
-// #define LEADERSHIP_STARS
+#define LEADERSHIP_STARS
 
 // If uncommented, Biorhythm will be implemented.
 // Go to "Biorhythm/Biorhythm.event" to edit settings.
@@ -148,7 +148,7 @@
 
 //If uncommented, Cannot Crit will be implemented.
 //Makes weapon crit of 255 negate crits.
-//#define CANNOT_CRIT
+#define CANNOT_CRIT
 
 //If uncommented, AdvWeaponLocks will be implemented.
 //This is a rewrite of venno's array-based weapon locks.
@@ -184,7 +184,7 @@ MESSAGE Please see the README.md there or ask @Vesly for help.
 // If uncommented, the fourth page of the stat screen will include personal information on the character.
 // This information can be edited in the "Personal Data Editor.csv" file.
 // This will automatically enable Narrow Font.
-#define ENABLE_PERSONAL_INFO
+//#define ENABLE_PERSONAL_INFO
 
 // If uncommented, the third page of the stat screen will only show weapon ranks that the unit has a rank in.
 #define ONLY_SHOW_USED_RANKS
@@ -203,13 +203,13 @@ MESSAGE Please see the README.md there or ask @Vesly for help.
 //#define INSTALL_AoE
 
 // If uncommented, Unlock staves will work on chests.
-// #define UNLOCK_WORKS_ON_CHESTS
+#define UNLOCK_WORKS_ON_CHESTS
 
 // If uncommented, damage numbers will display over participants' heads during battle animations.
 // #define BATTLE_ANIMATION_NUMBERS
 
 //ID of flag to use for hiding damage numbers, if enabled above.
-#define BATTLE_ANIMATION_NUMBERS_FLAG 0xEE
+//#define BATTLE_ANIMATION_NUMBERS_FLAG 0xEE
 
 // If uncommented, passive stat boosts will not stack and only the 
 // first item in the inventory with passive stat boosts will apply them.
@@ -248,7 +248,7 @@ MESSAGE Please see the README.md there or ask @Vesly for help.
 // if set to false, only the skill will work, if set to true both the skill and the ability will work
 #define ENABLE_LEGACY_CANTO False
 
-// if commented, enemies with Steal+ will steal as normal in vanilla (ie, the skill will be pretty much useless
+// if commented, enemies with Steal+ will steal as normal in vanilla (ie, the skill will be pretty much useless)
 #define ENABLE_AI_STEAL_PLUS
 
 // if commented, Steal will no longer be a skill, but a character ability, and Steal+ will require having regular steal
@@ -293,7 +293,7 @@ MESSAGE Please see the README.md there or ask @Vesly for help.
 
 //If uncommented, Combat Arts will be enabled.
 //This changes the behavior of most command skills and some proc skills such that they cost additional durability per hit and are selected from a submenu.
-// #define COMBAT_ARTS
+#define COMBAT_ARTS
 
 //If true, Combat Arts will not be allowed to hit more than once.
 #define ARTS_HIT_ONCE True
@@ -354,7 +354,7 @@ MESSAGE Please see the README.md there or ask @Vesly for help.
 // ================================
 
 //If commented, growths will not be displayed by pressing Select.
-#define PRESS_SELECT_TO_VIEW_GROWTHS
+//#define PRESS_SELECT_TO_VIEW_GROWTHS
 
 //If true, the stat colors for player units will reflect their growth in the stat.
 #define USE_STAT_COLORS True
@@ -373,7 +373,7 @@ MESSAGE Please see the README.md there or ask @Vesly for help.
 
 //If true, the effects of multiple passive growth boosters can stack.
 //Setting the 0x00800000 bit in the item ability bitfield will enable passive boosts.
-#define STACKABLE_GROWTH_BOOSTS True
+#define STACKABLE_GROWTH_BOOSTS False
 
 //Amount for Metis Tome to boost growths by
 #define METIS_TOME_BOOST 5

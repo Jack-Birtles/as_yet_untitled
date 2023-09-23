@@ -1,0 +1,26 @@
+//#include "CustomDefinitions.event"
+
+// Vanilla Library by Pikmin1211
+#include "PListDefinitions.event"
+
+//#include "_IER_CSV_Definitions.event"
+
+#include "CharacterDefinitions.event"
+
+//#include "ClassDefinitions.event"
+
+//#include "Mug Definitions.event"
+
+//#include "Item Definitions.event"
+
+//#include "Stat Bonuses.event"
+
+//#include "Weapon Locks.event"
+
+#include "AnimationDefinitions.event"
+
+//#include "Song Definitions.event"
+
+#include "TilesetDefinitions.event"
+
+#include "MapDefinitions.event"

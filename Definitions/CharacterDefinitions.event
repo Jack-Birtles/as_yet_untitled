@@ -1,0 +1,4 @@
+// Player
+
+#define Commander 0x1
+#define Jagen 0x2
